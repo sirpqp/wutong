@@ -2,6 +2,8 @@
 import scrapy
 from start import crawl
 
+from parse_file.parse_fcl import parse_fcl_detail
+
 
 class WutonginternationalSpider(scrapy.Spider):
     name = 'wutonginternational'
@@ -28,6 +30,9 @@ class WutonginternationalSpider(scrapy.Spider):
                 url=url,
                 headers=headers,
                 callback=self.parse,
+                meta={
+                    'carriage_type': carriage_type
+                }
             )
 
     def parse(self, response):
@@ -73,7 +78,19 @@ class WutonginternationalSpider(scrapy.Spider):
             pass
 
     def parse_fcl(self, response):
-        pass
+        print(response)
+
+        # 获取线路详情
+        a_list = response.xpath('//ul[@class="neiRong"]//a[@class="qyd"]')
+        for a in a_list:
+            detial_url = a.xpath("./@href").extract_first(default='')
+            yield scrapy.Request(
+                url=detial_url,
+                callback=self.parse_fcl_detail
+            )
+
+    def parse_fcl_detail(self, response):
+        print(response)
 
 
 if __name__ == '__main__':

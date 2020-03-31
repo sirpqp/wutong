@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1ZqEVsa6p3BELh3c971hvY3H0CV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -80,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585558250644</updated>
-      <workItem from="1585558258992" duration="10293000" />
+      <workItem from="1585558258992" duration="14748000" />
     </task>
     <servers />
   </component>
@@ -88,46 +95,46 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="928" y="371" width="915" height="669" key="#xdebugger.evaluate" timestamp="1585624636252">
+    <state x="2674" y="317" width="915" height="669" key="#xdebugger.evaluate" timestamp="1585627143457">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2674" y="317" width="915" height="669" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585627143457" />
+    <state width="1877" height="417" key="GridCell.Tab.0.bottom" timestamp="1585627908005">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="928" y="371" width="915" height="669" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585624636252" />
-    <state width="1877" height="394" key="GridCell.Tab.0.bottom" timestamp="1585624487391">
+    <state width="1877" height="417" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585627908005" />
+    <state width="1877" height="417" key="GridCell.Tab.0.center" timestamp="1585627908004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="394" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585624487391" />
-    <state width="1877" height="394" key="GridCell.Tab.0.center" timestamp="1585624487391">
+    <state width="1877" height="417" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585627908004" />
+    <state width="1877" height="417" key="GridCell.Tab.0.left" timestamp="1585627908004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="394" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585624487391" />
-    <state width="1877" height="394" key="GridCell.Tab.0.left" timestamp="1585624487391">
+    <state width="1877" height="417" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585627908004" />
+    <state width="1877" height="417" key="GridCell.Tab.0.right" timestamp="1585627908005">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="394" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585624487391" />
-    <state width="1877" height="394" key="GridCell.Tab.0.right" timestamp="1585624487391">
+    <state width="1877" height="417" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585627908005" />
+    <state width="1877" height="417" key="GridCell.Tab.1.bottom" timestamp="1585627902794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="394" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585624487391" />
-    <state width="1877" height="394" key="GridCell.Tab.1.bottom" timestamp="1585624490871">
+    <state width="1877" height="417" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585627902794" />
+    <state width="1877" height="417" key="GridCell.Tab.1.center" timestamp="1585627902794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="394" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585624490871" />
-    <state width="1877" height="394" key="GridCell.Tab.1.center" timestamp="1585624490870">
+    <state width="1877" height="417" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585627902794" />
+    <state width="1877" height="417" key="GridCell.Tab.1.left" timestamp="1585627902794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="394" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585624490870" />
-    <state width="1877" height="394" key="GridCell.Tab.1.left" timestamp="1585624490870">
+    <state width="1877" height="417" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585627902794" />
+    <state width="1877" height="417" key="GridCell.Tab.1.right" timestamp="1585627902794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="394" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585624490870" />
-    <state width="1877" height="394" key="GridCell.Tab.1.right" timestamp="1585624490871">
+    <state width="1877" height="417" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585627902794" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1585626081390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="394" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585624490871" />
-    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1585623674079">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585623674079" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585626081390" />
     <state x="511" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1585624212250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -138,14 +145,14 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/WuTongInternational/spiders/wutonginternational.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="19" />
+          <line>92</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/WuTongInternational$settings.coverage" NAME="settings Coverage Results" MODIFIED="1585561159879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WuTongInternational" />
-    <SUITE FILE_PATH="coverage/WuTongInternational$wutonginternational.coverage" NAME="wutonginternational Coverage Results" MODIFIED="1585624487281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WuTongInternational/spiders" />
+    <SUITE FILE_PATH="coverage/WuTongInternational$wutonginternational.coverage" NAME="wutonginternational Coverage Results" MODIFIED="1585627787260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WuTongInternational/spiders" />
   </component>
 </project>

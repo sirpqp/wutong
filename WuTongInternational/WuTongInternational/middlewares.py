@@ -153,13 +153,13 @@ class RandomProxyMiddleware(object):
         # - return a Request object
         # - or raise IgnoreRequest
         status_code = response.status
-        if status_code in [403, 500, 404]:
+        if status_code in [403, 500, 404, 502, 429]:
             ip = request.meta["proxy"]
             # 统计某个IP的错误次数
             self.proxy_error_stats[ip] += 1
             # 如果大于我们约定的五次，那就删IP
             if self.proxy_error_stats[ip] > 5:
-                # self.ips.remove(ip)
+                self.ips.remove(ip)
                 self.remove_fail_ip(ip)
                 # 去掉这个请求的meta的proxy
                 del request.meta["proxy"]
@@ -178,15 +178,15 @@ class RandomProxyMiddleware(object):
             # self.ips 去掉这个无效的IP
             ip = request.meta["proxy"]
             # self.ips.remove(ip)
-            # self.remove_fail_ip(ip)
+            self.remove_fail_ip(ip)
             # 去掉这个请求的meta的proxy
             del request.meta["proxy"]
             # 重新安排下载
             return request
 
-    # def remove_fail_ip(self, ip):
-    #     if ip in self.ips:
-    #         self.ips.remove(ip)
+    def remove_fail_ip(self, ip):
+        if ip in self.ips:
+            self.ips.remove(ip)
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
