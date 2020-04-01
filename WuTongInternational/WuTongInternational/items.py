@@ -35,4 +35,10 @@ class WutongInternationalCarriageItem(scrapy.Item):
     arrive = scrapy.Field()  # 目的地
     price = scrapy.Field()  # 运价 json格式
     meta = scrapy.Field()  # 承运详情 ：承运人，航空公司，航班周期，运抵时间，是否中专，付款方式等等 json格式
+    contact_person = scrapy.Field()  # 联系人
+    mobile = scrapy.Field()  # 手机
+    tel = scrapy.Field()  # 电话
+    QQ = scrapy.Field()  # QQ
+    remark = scrapy.Field()  # 备注说明
+
 

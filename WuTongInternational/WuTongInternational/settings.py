@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+import random
 from fake_useragent import UserAgent
 
 # Scrapy settings for WuTongInternational project
@@ -12,7 +13,7 @@ from fake_useragent import UserAgent
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-ua = UserAgent()
+# ua = UserAgent()
 
 BOT_NAME = 'WuTongInternational'
 
@@ -34,7 +35,7 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-# DOWNLOAD_DELAY = 3
+# DOWNLOAD_DELAY = round(random.random()*10, 2)
 # The download delay setting will honor only one of:
 # CONCURRENT_REQUESTS_PER_DOMAIN = 16
 # CONCURRENT_REQUESTS_PER_IP = 16
@@ -64,8 +65,8 @@ ROBOTSTXT_OBEY = False
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'WuTongInternational.middlewares.WutonginternationalDownloaderMiddleware': 543,
-    'WuTongInternational.middlewares.RandomProxyMiddleware': 80,
+    # 'WuTongInternational.middlewares.WutonginternationalDownloaderMiddleware': 543,
+    # 'WuTongInternational.middlewares.RandomProxyMiddleware': 80,
 }
 
 # Enable or disable extensions
@@ -100,6 +101,14 @@ DOWNLOADER_MIDDLEWARES = {
 # HTTPCACHE_DIR = 'httpcache'
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# MYSQL settings
+MYSQL_HOST = 'localhost'
+MYSQL_PORT = 3306
+MYSQL_USER = 'root'
+MYSQL_PWD = '123456'
+MYSQL_DATABASE = 'lzz'
+
 
 IPS = ['39.137.69.9:80',
        '39.137.107.98:8080',
