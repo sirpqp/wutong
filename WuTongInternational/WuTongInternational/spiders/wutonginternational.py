@@ -11,7 +11,7 @@ from items import WutongInternationalCarriageItem
 
 class WutonginternationalSpider(scrapy.Spider):
     name = 'wutonginternational'
-    allowed_domains = ['inter.chinawutong.com', 'm.chinawutong.com']
+    allowed_domains = ['inter.chinawutong.com', 'm.chinawutong.com', 'www.baidu.com']
     start_urls = ['http://inter.chinawutong.com/%s']
     carriage_type_list = ['fcl/', 'lcl/', 'bulk/', 'air/', 'land/', 'rail/']
 
@@ -188,7 +188,7 @@ class WutonginternationalSpider(scrapy.Spider):
         elif response.meta['carriage_type'] == 'rail/':
             item['carriage_type'] = '铁路'
 
-        print(item)
+        yield item
 
 
 if __name__ == '__main__':
