@@ -15,7 +15,7 @@ class WutonginternationalSpider(scrapy.Spider):
     start_urls = ['http://inter.chinawutong.com/%s']
     carriage_type_list = ['fcl/', 'lcl/', 'bulk/', 'air/', 'land/', 'rail/']
 
-    # carriage_type_list = ['rail/']
+    # carriage_type_list = ['lcl/']
 
     def start_requests(self):
         # 承运类型：整箱，拼箱，散杂，空运，铁路，公路
@@ -75,7 +75,6 @@ class WutonginternationalSpider(scrapy.Spider):
 
     def parse_line_detail(self, response):
         # 获取线路详情
-
         ul_list = response.xpath('//ul[@class="neiRong"]')
         for ul in ul_list:
             detail_url = ul.xpath('//a[@class="qyd"]/@href').extract_first(default='')
@@ -106,13 +105,23 @@ class WutonginternationalSpider(scrapy.Spider):
         # 下一页
         check_next = response.xpath('//ul[@class="subPaging"][contains(string(),"下一页")]')
         if check_next:
-            next_li = check_next.xpath('./li')[2:-3]
+            next_li = check_next.xpath('./li')[2:-2]
             for li in next_li:
                 next_url = li.xpath('./a/@href').extract_first()
                 print(next_url)
                 yield scrapy.Request(
                     url=next_url,
                     callback=self.parse_line_detail,
+                    headers={
+                        'Connection': 'keep-alive',
+                        'Pragma': 'no-cache',
+                        'Cache-Control': 'no-cache',
+                        'Upgrade-Insecure-Requests': '1',
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36',
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+                        'Referer': 'http://inter.chinawutong.com/fcl/',
+                        'Accept-Language': 'zh-CN,zh;q=0.9',
+                    },
                     meta={
                         'carriage_type': response.meta['carriage_type']
                     }
